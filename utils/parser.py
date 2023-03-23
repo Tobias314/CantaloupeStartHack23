@@ -3,7 +3,9 @@ import re
 from tqdm.auto import tqdm
 
 PATTERNS = {
-    'join_hate_kick_regex':re.compile('J.*R.*L')
+    'join_hate_leave':re.compile('J.*R.*L'),
+    'join_kick_join_kick':re.compile('J\)\(K\)\(J\)\(K'),
+    'offended_leave':re.compile('O.*L')
 }
 
 def create_event_string_alliance(alliance_messages, alliance_actions, account_id):

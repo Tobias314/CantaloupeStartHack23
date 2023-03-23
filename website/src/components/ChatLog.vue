@@ -21,7 +21,7 @@ console.log(colors)
 </script>
 
 <template>
-    <div class="flex-1 overflow-auto bg-slate-200 rounded">
+    <div class="flex-1 overflow-auto bg-slate-200 rounded m-10 p-5">
         <div class="py-2 px-3">
 
             <template v-for="message in messages" :key="message">

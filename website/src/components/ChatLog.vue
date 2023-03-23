@@ -33,7 +33,7 @@ const threshold = 2
 
             <template v-for="message in messages" :key="message">
                 <div v-if="message.isAction" class="flex justify-center mb-4">
-                    <div class="rounded py-2 px-4" style="background-color: #FCF4CB">
+                    <div class="rounded py-2 px-4 bg-yellow-100">
                         <p class="text-xs">
                             {{ message.content }}
                         </p>

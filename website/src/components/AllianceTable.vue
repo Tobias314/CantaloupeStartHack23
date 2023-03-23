@@ -13,7 +13,7 @@ const users = [{id: '3695a4fe1546b3a9879c14ddbfb509ad714dc6e9f3735516944519ac223
         <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
             <div class="overflow-hidden">
             <table class="min-w-full text-left text-sm font-light">
-                <thead class="border-b font-medium dark:border-neutral-500 bg-neutral-100">
+                <thead class="border-b font-medium dark:border-slate-500 bg-slate-100">
                 <tr>
                     <th scope="col" class="px-3 py-4">ID</th>
                     <th scope="col" class="px-3 py-4">Level</th>
@@ -27,7 +27,7 @@ const users = [{id: '3695a4fe1546b3a9879c14ddbfb509ad714dc6e9f3735516944519ac223
                 <tbody>
                 <tr
                     v-for="user, index in users" :key="user"
-                    class="border-b transition duration-300 ease-in-out hover:bg-neutral-50 dark:border-neutral-500 dark:hover:bg-neutral-600" :class="index % 2 != 0? 'bg-neutral-100 dark:bg-neutral-700' : 'bg-white dark:bg-neutral-600'">
+                    class="border-b transition duration-300 ease-in-out hover:bg-slate-50 dark:border-slate-500 dark:hover:bg-slate-600" :class="index % 2 != 0? 'bg-slate-100 dark:bg-slate-700' : 'bg-white dark:bg-slate-600'">
                     <td class="whitespace-nowrap px-3 py-4 font-medium">{{user.id}}</td>
                     <td class="whitespace-nowrap px-3 py-4">{{user.level}}</td>
                     <td class="whitespace-nowrap px-6 py-4">{{user.existingFor}}</td>

@@ -11,9 +11,9 @@ defineProps<{
 
 <template>
     
-<div class="w-full py-2 bg-white my-5">
+<div class="w-full py-2 my-5">
     <h3 class="mt-2">{{alliance.name}}</h3>
-    <div class="m-10 p-5">
+    <div class="my-10 py-5">
         
         <AllianceTable class=""/>
 

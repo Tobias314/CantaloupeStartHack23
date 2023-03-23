@@ -1,11 +1,20 @@
 <script setup lang="ts">
-import AllianceCard from './AllianceCard.vue';
+import { onBeforeMount, ref } from 'vue';
+import { Violation } from '../ts/Violation';
+import ViolationCard from './ViolationCard.vue';
 
+const violations = ref<Violation[]>([])
 
-const alliances = [{title: 'Hello, World', description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.' },
-{title: 'Hello, World', description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.' },
-{title: 'Hello, World', description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.' },
-{title: 'Hello, World', description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.' }]
+async function loadJSON(): Promise<JSON> {
+    const response = await fetch('src/assets/example.json');
+    const json = await response.json();
+    return json
+}
+
+onBeforeMount( async () => {
+    violations.value = await loadJSON() as any as Violation[]
+})
+
 
 </script>
 
@@ -13,8 +22,8 @@ const alliances = [{title: 'Hello, World', description: 'Here are the biggest en
 <template>
     <div class="m-10">
         <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white mb-10"> Clash Royale Alliances Observer </h1>
-        <template v-for="alliance in alliances" :key="alliance">
-            <AllianceCard :title="alliance.title" :description="alliance.description"/>
+        <template v-for="violation in violations" :key="violation">
+            <ViolationCard :violation="violation"/>
         </template>
     </div>
     

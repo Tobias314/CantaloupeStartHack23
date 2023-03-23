@@ -1,0 +1,132 @@
+[
+    {
+        "theViolation": "User has been kicked repeatedly",
+        "summary": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+        "happenedIn": {
+            "name": "The Royal Kings and Queens",
+            "chatlog": [
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 }
+            ]
+        },
+        "certainty": 1
+    },
+    {
+        "theViolation": "User has been kicked repeatedly",
+        "summary": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+        "happenedIn": {
+            "name": "The Royal Kings and Queens",
+            "chatlog": [
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj left", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 }
+            ]
+        },
+        "certainty": 0.9
+    },
+    {
+        "theViolation": "User has been kicked repeatedly",
+        "summary": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+        "happenedIn": {
+            "name": "The Royal Kings and Queens",
+            "chatlog": [
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 }
+            ]
+        },
+        "certainty": 1
+    },
+    {
+        "theViolation": "User has been kicked repeatedly",
+        "summary": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+        "happenedIn": {
+            "name": "The Royal Kings and Queens",
+            "chatlog": [
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 }
+            ]
+        },
+        "certainty": 0.4
+    },
+    {
+        "theViolation": "User has been kicked repeatedly",
+        "summary": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+        "happenedIn": {
+            "name": "The Royal Kings and Queens",
+            "chatlog": [
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
+                { "authorId": "domj", "content": "domj joined", "risk": 0 },
+                { "authorId": "domj", "content": "domj was kicked", "risk": 0 }
+            ]
+        },
+        "certainty": 0.2
+    }
+]

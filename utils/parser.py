@@ -6,7 +6,7 @@ PATTERNS = {
     'join_hate_kick_regex':re.compile('J.*R.*L')
 }
 
-def parse_event(alliance_messages, alliance_actions, account_id):
+def create_event_string_alliance(alliance_messages, alliance_actions, account_id):
     if alliance_messages is not None:
         #message_events
         alliance_messages['event'] = ''
@@ -28,15 +28,32 @@ def parse_event(alliance_messages, alliance_actions, account_id):
         alliance_actions = pd.DataFrame({'type':1, 'id':alliance_actions.index,  'timestamp':alliance_actions.timestamp, 'event':alliance_actions.event})
     
     protocol = pd.concat([alliance_messages, alliance_actions], ignore_index=True, axis=0).sort_values('timestamp', ascending=True)
-   
-    event_string =  ''.join('(' + protocol.event + ')')
-    
+    return ''.join('(' + protocol.event + ')')
+
+
+def create_all_event_strings_data(data):
+    results = dict()
+    alliance_message_groups = {i:g for i,g in data.messages.groupby('alliance_id')}
+    alliance_action_groups = {i:g for i,g in data.alliance_membership.groupby('alliance_id')}
+    for alliance_id, alliance_messages in tqdm(alliance_message_groups.items(), total=len(alliance_message_groups)):
+        alliance_actions = alliance_action_groups.get(alliance_id, None)
+        account_ids = alliance_messages.account_id.unique()
+        user_event_strings = dict()
+        for account_id in account_ids:
+            event_string =  create_event_string_alliance(alliance_messages=alliance_messages, alliance_actions=alliance_actions, account_id=account_id)
+            user_event_strings[account_id] = event_string
+        results[alliance_id] = user_event_strings
+        
+
+def parse_event(alliance_messages, alliance_actions, account_id):
+    event_string = create_event_string_alliance(alliance_messages=alliance_messages, alliance_actions=alliance_actions, account_id=account_id)
     result=dict()
     for name, pattern in PATTERNS.items():
         res = re.search(pattern, event_string)
         if res is not None:
             result[name]=res.span()
     return result
+
 
 def find_all_patterns(data):
     results = dict()

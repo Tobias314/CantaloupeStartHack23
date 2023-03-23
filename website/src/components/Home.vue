@@ -13,7 +13,6 @@ async function loadJSON(): Promise<JSON> {
 
 onBeforeMount( async () => {
     violations.value = await loadJSON() as any as Violation[]
-    console.log(violations.value)
 })
 
 

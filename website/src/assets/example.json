@@ -5,23 +5,83 @@
         "happenedIn": {
             "name": "The Royal Kings and Queens",
             "chatlog": [
-                { "authorId": "domj", "content": "domj joined", "risk": 0, "isAction": true },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0, "isAction": true },
-                { "authorId": "domj", "content": "domj joined", "risk": 0, "isAction": true },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0, "isAction": true },
-                { "authorId": "domj", "content": "domj joined", "risk": 0, "isAction": true },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0, "isAction": true },
-                { "authorId": "domj", "content": "domj joined", "risk": 0, "isAction": true },
-                { "authorId": "tobias", "content": "stop bullying", "risk": 0, "isAction": false },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0, "isAction": true },
-                { "authorId": "domj", "content": "domj joined", "risk": 0, "isAction": true },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0, "isAction": true },
-                { "authorId": "domj", "content": "domj joined", "risk": 0, "isAction": true },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0, "isAction": true },
-                { "authorId": "domj", "content": "domj joined", "risk": 0, "isAction": true },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0, "isAction": true },
-                { "authorId": "domj", "content": "domj joined", "risk": 0, "isAction": true },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0, "isAction": true }
+                {
+                    "author": "domj",
+                    "content": "domj joined",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": true
+                },
+                {
+                    "author": "domj",
+                    "content": "domj was kicked",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": true
+                },
+                {
+                    "author": "domj",
+                    "content": "domj joined",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": true
+                },
+                {
+                    "author": "domj",
+                    "content": "domj was kicked",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": true
+                },
+                {
+                    "author": "domj",
+                    "content": "domj joined",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": true
+                },
+                {
+                    "author": "domj",
+                    "content": "domj was kicked",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": true
+                },
+                {
+                    "author": "domj",
+                    "content": "domj joined",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": true
+                },
+                {
+                    "author": "tobias",
+                    "content": "stop bullying",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": false
+                },
+                {
+                    "author": "domj",
+                    "content": "domj was kicked",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": true
+                },
+                {
+                    "author": "domj",
+                    "content": "domj joined",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": true
+                },
+                {
+                    "author": "domj",
+                    "content": "domj was kicked",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": true
+                }
             ]
         }
     },
@@ -31,122 +91,136 @@
         "happenedIn": {
             "name": "SICKOS OVERLOAD",
             "chatlog": [
-                { "authorId": "5f8", "content": "domj joined", "risk": 0, "isAction": false },
                 {
-                    "authorId": "5f8",
+                    "author": "5f8",
                     "content": "user 5f8 was kicked",
                     "risk": 0,
+                    "timestamp": 1677687225895,
                     "isAction": true
                 },
-                { "authorId": "468", "content": "bitch", "risk": 0, "isAction": false },
-                { "authorId": "981", "content": "******", "risk": 0, "isAction": false },
-                { "authorId": "fd4", "content": "******", "risk": 0, "isAction": false },
-                { "authorId": "fd4", "content": "bro", "risk": 0, "isAction": false },
                 {
-                    "authorId": "4d3",
+                    "author": "468",
+                    "content": "bitch",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": false
+                },
+                {
+                    "author": "981",
+                    "content": "******",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": false
+                },
+                {
+                    "author": "fd4",
+                    "content": "******",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": false
+                },
+                {
+                    "author": "fd4",
+                    "content": "bro",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": false
+                },
+                {
+                    "author": "4d3",
                     "content": "**** *** ***** ******",
                     "risk": 0,
+                    "timestamp": 1677687225895,
                     "isAction": false
                 },
                 {
-                    "authorId": "981",
+                    "author": "981",
                     "content": "Y’all ****** *****",
                     "risk": 0,
+                    "timestamp": 1677687225895,
                     "isAction": false
                 },
-                { "authorId": "981", "content": "*****", "risk": 0, "isAction": false },
-                { "authorId": "468", "content": "lets watch animan", "risk": 0, "isAction": false },
-                { "authorId": "468", "content": "i love animan", "risk": 0, "isAction": false },
                 {
-                    "authorId": "468",
+                    "author": "981",
+                    "content": "*****",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": false
+                },
+                {
+                    "author": "468",
+                    "content": "lets watch animan",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": false
+                },
+                {
+                    "author": "468",
+                    "content": "i love animan",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": false
+                },
+                {
+                    "author": "468",
                     "content": "i need a non jewish partner",
                     "risk": 0,
+                    "isAction": false,
+                    "timestamp": 1677687225895
+                },
+                {
+                    "author": "fd4",
+                    "content": "shut up ******",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
                     "isAction": false
                 },
-                { "authorId": "fd4", "content": "shut up ******", "risk": 0, "isAction": false },
-                { "authorId": "fd4", "content": "****** cheaters", "risk": 0, "isAction": false },
                 {
-                    "authorId": "fd4",
+                    "author": "fd4",
+                    "content": "****** cheaters",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": false
+                },
+                {
+                    "author": "fd4",
                     "content": "we still 2 towers left ******",
                     "risk": 0,
+                    "isAction": false,
+                    "timestamp": 1677687225895
+                },
+                {
+                    "author": "468",
+                    "content": "challenger 3?",
+                    "risk": 0,
+                    "timestamp": 1677687225895,
+                    "isAction": false
+                }
+            ]
+        }
+    },
+    {
+        "theViolation": "User has been kicked repeatedly",
+        "summary": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+        "happenedIn": {
+            "name": "The Royal Kings and Queens",
+            "chatlog": [
+                {
+                    "author": "3695a4fe1546b3a9879c14ddbfb509ad714dc6e9f3735516944519ac22329aac",
+                    "alliance_id": "00000709d10b0d23ece5003a93f0ccef17561d8834553cbbbf631058d46975a7",
+                    "content": "Nigger",
+                    "risk": 6.0,
+                    "timestamp": 1677681134395,
                     "isAction": false
                 },
-                { "authorId": "468", "content": "challenger 3?", "risk": 0, "isAction": false }
-            ]
-        }
-    },
-    {
-        "theViolation": "User has been kicked repeatedly",
-        "summary": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-        "happenedIn": {
-            "name": "The Royal Kings and Queens",
-            "chatlog": [
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 }
-            ]
-        }
-    },
-    {
-        "theViolation": "User has been kicked repeatedly",
-        "summary": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-        "happenedIn": {
-            "name": "The Royal Kings and Queens",
-            "chatlog": [
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 }
-            ]
-        }
-    },
-    {
-        "theViolation": "User has been kicked repeatedly",
-        "summary": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-        "happenedIn": {
-            "name": "The Royal Kings and Queens",
-            "chatlog": [
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 },
-                { "authorId": "domj", "content": "domj joined", "risk": 0 },
-                { "authorId": "domj", "content": "domj was kicked", "risk": 0 }
+                {
+                    "author": "1ba3e45c1897aad9cd911bcd6226b1630b50b90c9cd8a28a4c036c7b2f39c8ac",
+                    "alliance_id": "00000709d10b0d23ece5003a93f0ccef17561d8834553cbbbf631058d46975a7",
+                    "content": "nigger",
+                    "risk": 6.0,
+                    "timestamp": 1677687225895,
+                    "isAction": false
+                }
             ]
         }
     }

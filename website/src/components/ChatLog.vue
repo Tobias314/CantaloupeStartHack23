@@ -13,15 +13,16 @@ const props = defineProps<{
 }>()
 
 function formatTimestamp(stamp: number): string {
-    const date = new Date(stamp * 1000);
+    const date = new Date(stamp);
     const hours = date.getHours();
-    const minutes = '0' + date.getMinutes();
-    return hours + ':' + minutes.substr(-2);
+    const minutes = date.getMinutes();
+    return hours + ':' + minutes;
 }
 
 const cssConfig = resolveConfig(tailwindConfig)
 const colors = Object.values((cssConfig as any).theme.colors.SET_3) as string[]
 const users = [...new Set(props.messages.map(message => message.author))]
+const threshold = 3
 
 </script>
 
@@ -40,7 +41,7 @@ const users = [...new Set(props.messages.map(message => message.author))]
                 </div>
 
                 <div v-else class="flex mb-2">
-                    <div class="rounded py-2 px-3 " style="background-color: #F2F2F2">
+                    <div class="rounded py-2 px-3 bg-stone-50 border-double border-rose-200" :style="message.risk >= threshold? `border-width: ${message.risk * 2}px` : `border-width: 0px;`">
                         <p class="text-sm font-bold" :style="`color: ${colors[users.indexOf(message.author) % colors.length]}`" >
                             {{message.author}}
                         </p>

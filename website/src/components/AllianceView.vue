@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Alliance } from '../ts/Alliance';
+import AllianceTable from './AllianceTable.vue';
 import ChatLog from './ChatLog.vue';
 
 defineProps<{
@@ -10,9 +11,15 @@ defineProps<{
 
 <template>
     
-<div class="w-full py-2 bg-white my-5">
-    <h5 class="mby-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{alliance.name}}</h5>
-    <ChatLog :messages="alliance.chatlog"/>
+<div class="w-full py-2 my-5">
+    <h3 class="mt-2">{{alliance.name}}</h3>
+    <div class="my-10 py-5">
+        
+        <AllianceTable class=""/>
+
+        
+        <ChatLog class="mt-10" :messages="alliance.chatlog"/>
+    </div>
 </div>
 
 </template>

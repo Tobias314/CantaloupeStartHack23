@@ -1,6 +1,8 @@
 export interface Message {
-    authorId: string
+    author: string
     content: string
     risk: number
     isAction: boolean
+    timestamp: number
+    alliance_id: string
 }

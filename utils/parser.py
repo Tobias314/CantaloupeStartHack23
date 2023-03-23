@@ -26,6 +26,8 @@ def create_event_string_alliance(alliance_messages, alliance_actions, account_id
         alliance_actions.loc[(alliance_actions.account_id == account_id) & (alliance_actions.action=='leave'),'event'] = 'L'
         #user got kicked event
         alliance_actions.loc[(alliance_actions.account_id == account_id) & (alliance_actions.action=='kicked_out'),'event'] = 'K'
+        #other user sends harassment
+        alliance_actions.loc[(alliance_actions.account_id != account_id) & (alliance_actions.action=='kicked_out'),'event'] = 'O'
         
         alliance_actions = pd.DataFrame({'type':1, 'id':alliance_actions.index,  'timestamp':alliance_actions.timestamp, 'event':alliance_actions.event})
     
@@ -45,6 +47,7 @@ def create_all_event_strings_data(data):
             event_string =  create_event_string_alliance(alliance_messages=alliance_messages, alliance_actions=alliance_actions, account_id=account_id)
             user_event_strings[account_id] = event_string
         results[alliance_id] = user_event_strings
+    return results
         
 
 def parse_event(alliance_messages, alliance_actions, account_id):

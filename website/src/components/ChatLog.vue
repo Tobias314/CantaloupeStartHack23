@@ -22,7 +22,7 @@ function formatTimestamp(stamp: number): string {
 const cssConfig = resolveConfig(tailwindConfig)
 const colors = Object.values((cssConfig as any).theme.colors.SET_3) as string[]
 const users = [...new Set(props.messages.map(message => message.author))]
-const threshold = 3
+const threshold = 2
 
 </script>
 

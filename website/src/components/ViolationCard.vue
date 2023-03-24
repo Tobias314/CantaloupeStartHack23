@@ -4,9 +4,11 @@ import { Violation } from '../ts/Violation';
 import AllianceView from './AllianceView.vue';
 import QuickActions from './QuickActions.vue'
 import { Patterns, Pattern } from '../ts/Pattern';
+import HeatMap from './HeatMap.vue';
 
-defineProps<{
+const props = defineProps<{
     violation: Violation,
+    index: number,
 }>()
 
 
@@ -35,13 +37,22 @@ function nameToColors(name: string) {
     const index = names.indexOf(name)% names.length
     return textColors[index ] + ' ' + mainColors[index ] + ' ' + borderColors[index ]
 }
+
+function generateVizId() {
+    return 'viz-'+props.index
+}
 </script>
 
 <template>
     
 <div :id="violation.alliance_id" class="grid grid-cols-8 my-10 ">
+    
     <div class="p-6 border border-b-4 border-blue-200 rounded-lg shadow col-span-7 overflow-x-auto flex flex-col">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{Object.entries(violation.theViolations).length}} Violations <small class="ml-2 font-semibold text-gray-500 dark:text-gray-400">in clan {{ violation.alliance_id }}</small></h5>
+        <div class="grid grid-cols-8">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white col-span-6">{{Object.entries(violation.theViolations).length}} Violations <small class="ml-2 font-semibold text-gray-500 dark:text-gray-400">in clan {{ violation.alliance_id }}</small></h5>
+            <HeatMap :users="violation.happenedIn.alliance_account_summaries" :container-name="generateVizId()"/>
+        </div>
+        
         <p class="mb-2 font-normal text-gray-700 dark:text-gray-400">{{ violation.summary }}</p>
 
         <div class="flex flex-row mb-2">   

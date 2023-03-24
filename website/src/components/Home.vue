@@ -17,7 +17,7 @@ async function loadJSON(): Promise<JSON> {
 function allianceToViolation(object: [string, Alliance]): Violation {
     return {
         theViolations: object[1].found_patterns,
-        summary: '',
+        summary: object[1].summary,
         alliance_id: object[0],
         happenedIn: object[1]
     }

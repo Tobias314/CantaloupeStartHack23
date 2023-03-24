@@ -5,8 +5,7 @@ import AllianceView from './AllianceView.vue';
 import QuickActions from './QuickActions.vue'
 import { Patterns, Pattern } from '../ts/Pattern';
 
-
-const props = defineProps<{
+defineProps<{
     violation: Violation,
 }>()
 

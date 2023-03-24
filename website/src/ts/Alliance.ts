@@ -3,6 +3,7 @@ import { Patterns } from './Pattern'
 import { Users } from './User'
 
 export interface Alliance {
+    summary: string
     CHILD_GROOMING: number
     EXTREMISM: number
     HATE_SPEECH: number

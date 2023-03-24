@@ -48,10 +48,9 @@ function generateVizId() {
 <div :id="violation.alliance_id" class="grid grid-cols-8 my-10 ">
     
     <div class="p-6 border border-b-4 border-blue-200 rounded-lg shadow col-span-7 overflow-x-auto flex flex-col">
-        <div class="grid grid-cols-8">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 col-span-6">{{Object.entries(violation.theViolations).length}} Violations <small class="ml-2 font-semibold text-gray-500">in clan {{ violation.alliance_id }}</small></h5>
-            <HeatMap :users="violation.happenedIn.alliance_account_summaries" :container-name="generateVizId()"/>
-        </div>
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 col-span-6">{{Object.entries(violation.theViolations).length}} Violations <small class="ml-2 font-semibold text-gray-500">in clan {{ violation.alliance_id }}</small></h5>
+           
+        <HeatMap :users="violation.happenedIn.alliance_account_summaries" :container-name="generateVizId()"/>
         
         <p class="mb-2 font-normal text-gray-700">{{ violation.summary }}</p>
 

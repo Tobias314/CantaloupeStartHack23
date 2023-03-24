@@ -19,5 +19,5 @@ onMounted(() => {
 
 <template>
         <Tooltip :data-model="tooltipModel"/>
-        <div :id="containerName" ref="container" class="ml-10 h-[80px] w-[130px]"></div>
+        <div :id="containerName" ref="container" class="h-[150px] w-[210px]"></div>
 </template>

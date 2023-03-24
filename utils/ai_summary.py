@@ -15,6 +15,6 @@ def create_chatgpt_prompt(alliance_summary):
             res+= '\n' + action
         else:
             res+= '\n' + f'User {usr} says: {row.content}'
-    header = 'First, summarize the following group chat from the mobile game clash royal:\n'
+    header = 'Summarize the following group chat from the mobile game clash royal:\n'
     footer = '\n\nSecond, take the role of a neutral moderator. List users using inappropriate language.'
-    return header + res + footer
+    return header + res

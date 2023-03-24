@@ -49,11 +49,11 @@ function generateVizId() {
     
     <div class="p-6 border border-b-4 border-blue-200 rounded-lg shadow col-span-7 overflow-x-auto flex flex-col">
         <div class="grid grid-cols-8">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 col-span-6">{{Object.entries(violation.theViolations).length}} Violations <small class="ml-2 font-semibold text-gray-500 dark:text-gray-400">in clan {{ violation.alliance_id }}</small></h5>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 col-span-6">{{Object.entries(violation.theViolations).length}} Violations <small class="ml-2 font-semibold text-gray-500">in clan {{ violation.alliance_id }}</small></h5>
             <HeatMap :users="violation.happenedIn.alliance_account_summaries" :container-name="generateVizId()"/>
         </div>
         
-        <p class="mb-2 font-normal text-gray-700 dark:text-gray-400">{{ violation.summary }}</p>
+        <p class="mb-2 font-normal text-gray-700">{{ violation.summary }}</p>
 
         <div class="flex flex-row mb-2">   
             <div 
@@ -70,7 +70,7 @@ function generateVizId() {
         </div>
         
 
-        <a class="inline-flex items-center text-lg text-blue-600 dark:text-blue-500 hover:underline cursor-pointer" @click="toggleAlliance">
+        <a class="inline-flex items-center text-lg text-blue-600 hover:underline cursor-pointer" @click="toggleAlliance">
         {{text}}
             <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
         </a>

@@ -20,7 +20,7 @@ const id_user: any = Object.entries(props.users)
         <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
             <div class="overflow-hidden">
             <table class="min-w-full text-left text-sm font-light">
-                <thead class="border-b font-medium dark:border-slate-500 bg-slate-100">
+                <thead class="border-b font-medium bg-slate-100">
                 <tr>
                     <th scope="col" class="px-3 py-4">ID</th>
                     <th scope="col" class="px-3 py-4">Level</th>
@@ -34,7 +34,7 @@ const id_user: any = Object.entries(props.users)
                 <tbody>
                 <tr
                     v-for="user_and_id, index in id_user" :key="user_and_id"
-                    class="border-b transition duration-300 ease-in-out hover:bg-slate-50 " :class="index % 2 != 0? 'bg-slate-100 dark:bg-slate-700' : 'bg-white dark:bg-slate-600'">
+                    class="border-b transition duration-300 ease-in-out hover:bg-slate-50 " :class="index % 2 != 0? 'bg-slate-100' : 'bg-white'">
                     <td class="whitespace-nowrap px-3 py-4 font-medium">{{user_and_id[0]}}</td>
                     <td class="whitespace-nowrap px-3 py-4">{{user_and_id[1].level}}</td>
                     <td class="whitespace-nowrap px-6 py-4">{{ (user_and_id[1].time_existent / 1000 / 60 / 60/ 24).toFixed(2) }} Days</td>

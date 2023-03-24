@@ -12,7 +12,7 @@ def summarize_alliance(data, alliance_id=None):
         
     res = []
     for alliance_messages in tqdm(groups):
-        alliance_messages['content'] = alliance_messages['filtered_message']
+        alliance_messages['content'] = alliance_messages['raw_message']
         alliance_messages['type'] = "Chat|" + alliance_messages['account_id'].str[:3]
         actions = data.alliance_membership[data.alliance_membership.alliance_id==alliance_id]
         actions = actions[['timestamp','action','account_id']]

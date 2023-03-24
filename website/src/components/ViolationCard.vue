@@ -27,7 +27,7 @@ function violationNames(pattern: Patterns): string[] {
     return Object.entries(pattern).map((entry: [string, Pattern]) => Object.entries(Object.entries(entry[1])[0])[0][1] as unknown as string)
 }
 
-const names = [...new Set(violationNames(props.violation.theViolations))]
+const names = ['join_hate_leave', 'offended_leave', 'join_kick_join_kick']
 const textColors = ['text-red-400', 'text-yellow-400', 'text-blue-400']
 const mainColors = ['bg-red-100', 'bg-yellow-100', 'bg-blue-100']
 const borderColors= ['border-red-800', 'border-yellow-800','border-blue-800']

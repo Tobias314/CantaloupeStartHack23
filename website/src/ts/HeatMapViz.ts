@@ -43,8 +43,8 @@ export class HeatMap {
         const x = d3.scaleBand().range([0, width]).domain(myGroups).padding(0.05)
         this.container
             .append('g')
-            .style('font-size', 6)
-            .attr('transform', `translate(0, ${height})`)
+            .style('font-size', 12)
+            .attr('transform', `translate(0, ${width})`)
             .call(d3.axisBottom(x).tickSize(0))
             .select('.domain')
             .remove()
@@ -54,7 +54,6 @@ export class HeatMap {
         this.container
             .append('g')
             .style('font-size', 6)
-            .attr('transform', `translate(-50, ${height})`)
             .call(d3.axisLeft(y).tickSize(0))
             .select('.domain')
             .remove()

@@ -5,20 +5,20 @@ import ChatLog from './ChatLog.vue';
 
 defineProps<{
     alliance: Alliance,
+    allianceId: string
 }>()
 
 </script>
 
 <template>
     
-<div class="w-full py-2 my-5">
-    <h3 class="mt-2">{{alliance.name}}</h3>
+<div class="w-full py-2 my-5 ">
     <div class="my-10 py-5">
         
-        <AllianceTable class=""/>
+        <AllianceTable :alliance="alliance" :users="alliance.alliance_account_summaries" class=""/>
 
         
-        <ChatLog class="mt-10" :messages="alliance.chatlog"/>
+        <ChatLog class="mt-10" :messages="alliance.protocol"/>
     </div>
 </div>
 

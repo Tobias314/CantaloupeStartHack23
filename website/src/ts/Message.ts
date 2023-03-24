@@ -1,8 +1,12 @@
 export interface Message {
+    alliance_id: string
     author: string
     content: string
-    risk: number
     isAction: boolean
+    risk: number
     timestamp: number
-    alliance_id: string
+}
+
+export interface Messages {
+    [messageIndex: number]: Message
 }

@@ -1,8 +1,9 @@
 import { Alliance } from './Alliance'
-import { Rules } from './Rules'
+import { Patterns } from './Pattern'
 
 export interface Violation {
-    theViolation: Rules
+    theViolations: Patterns
     summary: string
+    alliance_id: string
     happenedIn: Alliance
 }

@@ -9,7 +9,7 @@ const props = defineProps<{
 function hide() {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    document.getElementById(`${props.violation.theViolation}${props.violation.happenedIn.name}`).style.display = 'none';
+    document.getElementById(`${props.violation.alliance_id}`).style.display = 'none';
     
 }
 

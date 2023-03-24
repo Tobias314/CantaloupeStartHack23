@@ -6,22 +6,23 @@ import resolveConfig from 'tailwindcss/resolveConfig';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import tailwindConfig from '../../tailwind.config.cjs'
-import { Message } from '../ts/Message';
+import { Messages, Message } from '../ts/Message';
+import { toRaw } from 'vue';
 
 const props = defineProps<{
-    messages: Message[],
+    messages: Messages,
 }>()
 
 function formatTimestamp(stamp: number): string {
-    const date = new Date(stamp);
-    const hours = date.getHours();
-    const minutes = date.getMinutes();
-    return hours + ':' + minutes;
+    return new Date(stamp).toLocaleTimeString()
 }
 
 const cssConfig = resolveConfig(tailwindConfig)
 const colors = Object.values((cssConfig as any).theme.colors.SET_3) as string[]
-const users = [...new Set(props.messages.map(message => message.author))]
+const messages = toRaw(
+Object.entries(props.messages).map((entry:[string, Message]) => entry[1])
+.sort((messageA, messageB) => messageA.timestamp - messageB.timestamp))
+const users = [...new Set(messages.map(message => message.author))]
 const threshold = 2
 
 </script>
@@ -35,7 +36,7 @@ const threshold = 2
                 <div v-if="message.isAction" class="flex justify-center mb-4">
                     <div class="rounded py-2 px-4 bg-yellow-100">
                         <p class="text-xs">
-                            {{ message.content }}
+                            <span :style="`color: ${colors[users.indexOf(message.author) % colors.length]}`">{{ message.author }}</span> {{ message.content.includes("kick")?  message.content :  message.content + 's' }}
                         </p>
                     </div>
                 </div>
